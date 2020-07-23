@@ -51,25 +51,28 @@ public class New5name1 extends JFrame {
 		String[][] tables1 = new String[list1.size()][7];
 		if(list!=null) {
 			House house1 = list.get(0);
-			Public public1 = list1.get(0);
-			tables[0][0] = house1.getHhouseid()+"";
-			tables[0][1] = house1.getHname();
-			tables[0][2] = house1.getHaddress();
-			tables[0][3] = house1.getHnumber();
-			tables[0][4] = house1.getHmecd()+"";	
-			tables[0][5] = house1.getHmeid()+"";	
-			tables[0][6] = house1.getHzip()+"";	
+			
+			//tables[0][0] = house1.getHhouseid()+"";
+			tables[0][0] = house1.getHname();
+			tables[0][1] = house1.getHaddress();
+			//tables[0][2] = house1.getHaddress();
+			tables[0][2] = house1.getHnumber();
+			tables[0][3] = house1.getHmecd()+"";	
+			tables[0][4] = house1.getHmeid()+"";	
+			tables[0][5] = house1.getHzip()+"";	
 			
 			
 			//tables1[0][0] = public1.getPhouseid()+"";
-			tables1[0][0] = public1.getPname();
-			tables1[0][1] = public1.getPssex();
-			tables1[0][2] = public1.getPheight()+"";
-			tables1[0][3] = public1.getPweight()+"";
-			tables1[0][4] = public1.getPbloodpressure();
-			tables1[0][5] = public1.getPsee();
-		
 			
+		}
+		for (int i = 0; i < list1.size(); i++) {
+			Public public1 = list1.get(i);
+			tables1[i][0] = public1.getPname();
+			tables1[i][1] = public1.getPssex();
+			tables1[i][2] = public1.getPheight()+"";
+			tables1[i][3] = public1.getPweight()+"";
+			tables1[i][4] = public1.getPbloodpressure();
+			tables1[i][5] = public1.getPsee();
 		}
 //		if(list1!=null) {
 //			Public public1 = list1.get(0);
@@ -84,7 +87,7 @@ public class New5name1 extends JFrame {
 //		
 //			
 //		}
-		String[] title = {"姓名","年龄","性别","死亡时间","死亡地点","家庭住址"};
+		String[] title = {"姓名","家庭住址","手机号","医疗编号","医疗卡号","邮政编号"};
 		String[] title1 = {"姓名","性别","身高","体重","血压","视力"};
 		JTable table  = new JTable(tables,title);
 		JTable table1  = new JTable(tables1,title1);
@@ -102,7 +105,7 @@ public class New5name1 extends JFrame {
 		pane1.add(table1.getTableHeader(),BorderLayout.NORTH);
 		pane1.add(table1,BorderLayout.CENTER);
 
-		getContentPane().add(pane);
+		getContentPane().add(pane,BorderLayout.NORTH);
 		getContentPane().add(pane1);
 		this.setVisible(true);
 	}

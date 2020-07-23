@@ -56,7 +56,7 @@ public class New1Name extends JFrame {
 	 * Create the frame.
 	 */
 	public New1Name() {
-		setTitle("健康档案");
+		setTitle("健康档案数据管理");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 660, 460);
 		contentPane = new JPanel();

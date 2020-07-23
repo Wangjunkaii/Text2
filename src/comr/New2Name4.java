@@ -29,11 +29,8 @@ public class New2Name4 extends JFrame {
 	
 	public New2Name4(List<Public> list) throws HeadlessException {
 
-			
-	
 		
-		
-		setBounds((1366-800)/2,(768-460)/2,800,460);
+		setBounds((1366-400)/2,(768-300)/2,400,300);
 		setTitle("公共卫生服务");
 		//JLabel label = new JLabel(new ImageIcon("./image/6.jpg"));//图片未显示
 		setLayout(new BorderLayout());

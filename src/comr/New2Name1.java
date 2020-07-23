@@ -53,7 +53,7 @@ public class New2Name1 extends JDialog {
 	 * Create the dialog.
 	 */
 	public New2Name1() {
-		setBounds(100, 100, 800, 460);
+		setBounds(100, 100, 700, 380);
 		setTitle("公共卫生服务");
 		getContentPane().setLayout(null);
 		contentPanel.setBounds(0, 0, 432, 1);
@@ -66,75 +66,75 @@ public class New2Name1 extends JDialog {
 		contentPanel.add(label);
 		
 		JLabel lblNewLabel = new JLabel("编号:");
-		lblNewLabel.setBounds(102, 85, 72, 18);
+		lblNewLabel.setBounds(72, 45, 72, 18);
 		getContentPane().add(lblNewLabel );
 		
 		JLabel label_1 = new JLabel("姓名:");
-		label_1.setBounds(102, 130, 72, 18);
+		label_1.setBounds(72, 90, 72, 18);
 		getContentPane().add(label_1);
 		
 		JLabel label_2 = new JLabel("性别:");
-		label_2.setBounds(102, 175, 72, 18);
+		label_2.setBounds(72, 135, 72, 18);
 		getContentPane().add(label_2);
 		
 		JLabel label_3 = new JLabel("身高:");
-		label_3.setBounds(102, 220, 72, 18);
+		label_3.setBounds(72, 180, 72, 18);
 		getContentPane().add(label_3);
 		
 		textField = new JTextField();
-		textField.setBounds(150, 85, 225, 24);
+		textField.setBounds(120, 45, 225, 24);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JLabel label_4 = new JLabel("体重:");
-		label_4.setBounds(400, 85, 90, 18);
+		label_4.setBounds(370, 45, 90, 18);
 		getContentPane().add(label_4);
 		
 		JLabel label_5 = new JLabel("血压:");
-		label_5.setBounds(400, 130, 90, 18);
+		label_5.setBounds(370, 90, 90, 18);
 		getContentPane().add(label_5);
 		
 		JLabel label_6 = new JLabel("视力:");
-		label_6.setBounds(400, 175, 90, 18);
+		label_6.setBounds(370, 135, 90, 18);
 		getContentPane().add(label_6);
 		
 		JLabel label_7 = new JLabel("肺活量:");
-		label_7.setBounds(400, 220, 90, 18);
+		label_7.setBounds(370, 180, 90, 18);
 		getContentPane().add(label_7);
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
-		textField_1.setBounds(150, 130, 225, 24);
+		textField_1.setBounds(120, 90, 225, 24);
 		getContentPane().add(textField_1);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(150, 175, 225, 24);
+		textField_2.setBounds(120, 135, 225, 24);
 		getContentPane().add(textField_2);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(150, 220, 226, 24);
+		textField_3.setBounds(120, 180, 226, 24);
 		getContentPane().add(textField_3);
 		textField_3.setColumns(10);
 		
 		textField_4 = new JTextField();
-		textField_4.setBounds(450, 85, 224, 24);
+		textField_4.setBounds(420, 45, 224, 24);
 		getContentPane().add(textField_4);
 		textField_4.setColumns(10);
 		
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(450, 130, 225, 24);
+		textField_5.setBounds(420, 90, 225, 24);
 		getContentPane().add(textField_5);
 		
 		textField_6 = new JTextField();
 		textField_6.setColumns(10);
-		textField_6.setBounds(450, 175, 225, 24);
+		textField_6.setBounds(420, 135, 225, 24);
 		getContentPane().add(textField_6);
 		
 		textField_7 = new JTextField();
 		textField_7.setColumns(10);
-		textField_7.setBounds(450, 220, 225, 24);
+		textField_7.setBounds(420, 180, 225, 24);
 		getContentPane().add(textField_7);
 		
 		
@@ -151,15 +151,18 @@ public class New2Name1 extends JDialog {
 				di.setPbloodpressure(textField_5.getText());
 				di.setPsee(textField_6.getText());
 				di.setPvital(textField_7.getText());
+				
 				PublicDao public1 = new PublicDao();
 				public1.updateByCondtion(di);
+				
+				
 				dispose();
 				JOptionPane.showMessageDialog(null, "修改成功");
 				
 			}
 		});
 		btnNewButton.setAction(action);
-		btnNewButton.setBounds(330, 300, 113, 27);
+		btnNewButton.setBounds(300, 260, 113, 27);
 		getContentPane().add(btnNewButton);
 	}
 	private class SwingAction extends AbstractAction {

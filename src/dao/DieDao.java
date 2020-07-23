@@ -31,7 +31,8 @@ public class DieDao extends BaseDie<Die>{
 			if(die != null) {
 				if(die.getDname()!=null&&!"".equals(die.getDname())) {
 					sql.append(" and name like ?");
-					tmp = die.getDname();
+					
+					tmp = die.getDname()+"%";
 				}
 				
 				

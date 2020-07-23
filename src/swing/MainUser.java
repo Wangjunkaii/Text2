@@ -30,20 +30,19 @@ public class MainUser extends JFrame {
 			
 		//±³¾°Í¼Æ¬
 		
-//		    JFrame jf=new JFrame("»¶Ó­ÓÃ»§µÇÂ¼");
-//
+		   
+
 //		    JPanel panel = new JPanel(null);
 //	        JLabel label_image1 = new JLabel(new ImageIcon("./image/7.jng"));
 //	  		label_image1.setLocation(0, 20);
 //	  		label_image1.setSize(600,50);
 //			panel.add(label_image1);
-//			
-//			jf.setContentPane(panel);
-//			 jf.setVisible(true);
+			
 		
 		
-		setBounds((1366-800)/2,(768-460)/2,800,460);
+		setBounds((1366-540)/2,(768-300)/2,540,300);
 		setTitle("»¶Ó­ÓÃ»§µÇÂ¼");
+		 
 		//JLabel label = new JLabel(new ImageIcon("./image/6.jpg"));//Í¼Æ¬Î´ÏÔÊ¾
 		setLayout(new BorderLayout());
 		
@@ -88,12 +87,13 @@ public class MainUser extends JFrame {
 		JPanel pane = new JPanel();
 		table.setFont(new Font("ËÎÌå",Font.BOLD,18));
 		table.setRowHeight(30);
-		
-
+        
 
 		JPanel pane1 = new JPanel();
 		table1.setFont(new Font("ËÎÌå",Font.BOLD,18));
 		table1.setRowHeight(30);
+		
+	
 		
 		pane.add(table.getTableHeader(),BorderLayout.NORTH);
 		pane.add(table,BorderLayout.CENTER);
@@ -102,10 +102,16 @@ public class MainUser extends JFrame {
 		f.setVgap(0);
 		pane1.add(table1.getTableHeader(),BorderLayout.NORTH);
 		pane1.add(table1,BorderLayout.CENTER);
+		
+		JLabel label_image = new JLabel(new ImageIcon("./image/9.jpg"));
+  		label_image.setLocation(200, 160);
+  	//	label_image.setSize(200,200);
+		pane1.add(label_image);
+		
 		FlowLayout f1=(FlowLayout)pane1.getLayout();
 		f1.setHgap(0);
 		f1.setVgap(0);
-		pane.setPreferredSize(new Dimension(100,100));
+		pane.setPreferredSize(new Dimension(100,65));
 		getContentPane().add(pane,BorderLayout.NORTH);
 		getContentPane().add(pane1,BorderLayout.CENTER);
 		this.setVisible(true);

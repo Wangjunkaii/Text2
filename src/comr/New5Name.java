@@ -1,6 +1,7 @@
 package comr;
 
 import java.awt.event.ActionEvent;
+
 import java.awt.event.ActionListener;
 import java.util.List;
 
@@ -62,11 +63,11 @@ public class New5Name extends JDialog {
 		label.setBounds(57, 48, 72, 18);
 		contentPanel.add(label);
 		
-		JLabel lblNewLabel = new JLabel("输入家庭编号:");
-		lblNewLabel.setBounds(232, 130, 72, 18);
+		JLabel lblNewLabel = new JLabel("户主姓名:");
+		lblNewLabel.setBounds(50, 80, 72, 18);
 		getContentPane().add(lblNewLabel);
 		textField = new JTextField();
-		textField.setBounds(302, 130, 225, 24);
+		textField.setBounds(120, 80, 170, 24);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		JButton btnNewButton = new JButton("查询");
@@ -76,15 +77,18 @@ public class New5Name extends JDialog {
 				House house = new House();
 				house.setHname(textField.getText());
 				
-				PublicDao PublicD = new PublicDao();
-				Public public1 = new Public();
-				public1.setPname(textField.getText());
+				
 			
 				
 				List<House> list = houseD.selectByCondtion(house);
+				
+				
+				PublicDao PublicD = new PublicDao();
+				Public public1 = new Public();
+				
+				public1.setPhouseid(list.get(0).getHhouseid());
 				List<Public> list1 = PublicD.selectByCondtion(public1);
-				
-				
+				System.out.println("size: "+list1.size());
 				dispose();
 				JOptionPane.showMessageDialog(null, "查找成功");
 				
@@ -99,7 +103,7 @@ public class New5Name extends JDialog {
 			
 		});
 		btnNewButton.setAction(action);
-		btnNewButton.setBounds(335, 220, 113, 27);
+		btnNewButton.setBounds(135, 170, 100, 30);
 		getContentPane().add(btnNewButton);
 	}
 	private class SwingAction extends AbstractAction {

@@ -41,14 +41,14 @@ public class LeftPanel extends JPanel {
 	
 	public LeftPanel() {
 		
-		setBackground(Color.PINK);
+	//0	setBackground(Color.yellow);
 		initComponents();
 		setVisible(true);
 	}
 	
 	private void initComponents() {
 		this.setLayout(null);
-		
+//用户管理		
 		btn1 = new JButton("用户管理");
 		btn1.setBounds(10, 5, 95, 30);
 		btn1.addActionListener(new ActionListener() {
@@ -97,17 +97,17 @@ public class LeftPanel extends JPanel {
 				JButton btn = new JButton("增加");
 				btn.setIcon(new ImageIcon("image/add.png"));
 				JButton btn1 = new JButton("删除");
-				btn1.setIcon(new ImageIcon("image/add.png"));
+				btn1.setIcon(new ImageIcon("image/decline.png"));
 				JButton btn2 = new JButton("修改");
-				btn2.setIcon(new ImageIcon("image/add.png"));
+				btn2.setIcon(new ImageIcon("image/arrow_rotate_clockwise.png"));
 				JButton btn3 = new JButton("查询");
-				btn3.setIcon(new ImageIcon("image/add.png"));
+				btn3.setIcon(new ImageIcon("image/zoom.png"));
 				bar.add(btn);
 				bar.add(btn1);
 				bar.add(btn2);
 				bar.add(btn3);
 				
-				//修改
+				//查找
 				btn3.addActionListener(new ActionListener() {
 
 						    	 
@@ -115,20 +115,21 @@ public class LeftPanel extends JPanel {
 						public void actionPerformed(ActionEvent e) {
 							NewName3 newInsert1 = new NewName3();
 							newInsert1.setVisible(true);
-							newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+							newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 							newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 						    	 
 						    	 
 						
 					}	
 				});
+				//修改
 				btn2.addActionListener(new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent e) {
 						NewName2 jb1= new NewName2();
 						jb1.setVisible(true);
-						jb1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						jb1.setBounds((1366-600)/2, (768-400)/2, 600, 400);
 						jb1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -139,7 +140,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						NewName1 jd= new NewName1();
 						jd.setVisible(true);
-						jd.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						jd.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 						jd.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 						
 					}
@@ -152,7 +153,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						NewName newInsert = new NewName();
 						newInsert.setVisible(true);
-						newInsert.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert.setBounds((1366-600)/2, (768-400)/2, 600, 400);
 						newInsert.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -172,7 +173,7 @@ public class LeftPanel extends JPanel {
 	
 		
 		
-		
+//健康档案管理		
 		btn2 = new JButton("健康档案数据管理");
 		btn2.setBounds(10, 45, 95, 30);
 		btn2.addActionListener(new ActionListener() {
@@ -222,12 +223,12 @@ public class LeftPanel extends JPanel {
 				bar.setPreferredSize(new Dimension(0,60));
 				JButton btn = new JButton("增加");
 				btn.setIcon(new ImageIcon("image/add.png"));
-				JButton btn1 = new JButton("修改");
-				btn1.setIcon(new ImageIcon("image/add.png"));
-				JButton btn2 = new JButton("删除");
-				btn2.setIcon(new ImageIcon("image/add.png"));
+				JButton btn1 = new JButton("删除");
+				btn1.setIcon(new ImageIcon("image/decline.png"));
+				JButton btn2 = new JButton("修改");
+				btn2.setIcon(new ImageIcon("image/arrow_rotate_clockwise.png"));
 				JButton btn3 = new JButton("查询");
-				btn3.setIcon(new ImageIcon("image/add.png"));
+				btn3.setIcon(new ImageIcon("image/zoom.png"));
 				bar.add(btn);
 				bar.add(btn1);
 				bar.add(btn2);
@@ -240,7 +241,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						New1Name newInsert = new New1Name();
 						newInsert.setVisible(true);
-						newInsert.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert.setBounds((1366-650)/2, (768-460)/2, 650, 460);
 						newInsert.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -251,7 +252,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						New1Name1 newInsert1 = new New1Name1();
 						newInsert1.setVisible(true);
-						newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 						newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -261,7 +262,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						New1Name2 newInsert1 = new New1Name2();
 						newInsert1.setVisible(true);
-						newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert1.setBounds((1366-650)/2, (768-460)/2, 650, 460);
 						newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -271,7 +272,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						New1Name3 newInsert1 = new New1Name3();
 						newInsert1.setVisible(true);
-						newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 						newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -302,7 +303,7 @@ public class LeftPanel extends JPanel {
 				
 				jpCenter.setLayout(new BorderLayout());
 				JPanel pane = new JPanel(new BorderLayout());
-				String[] titles = {"家庭编号","编号","姓名","性别","身高","体重","血压","视力","肺活量"};
+				String[] titles = {"编号","姓名","性别","身高","体重","血压","视力","肺活量"};
 				
 				PublicDao public1 = new PublicDao();
 				
@@ -312,7 +313,6 @@ public class LeftPanel extends JPanel {
 				
 				for (int i = 0; i < list.size(); i++) {
 					Public tmp = list.get(i);
-					tables[i][0] = tmp.getPhouseid()+"";
 					tables[i][0] = tmp.getPid()+"";
 					tables[i][1] = tmp.getPname();
 					tables[i][2] = tmp.getPssex();
@@ -335,11 +335,11 @@ public class LeftPanel extends JPanel {
 				JButton btn = new JButton("增加");
 				btn.setIcon(new ImageIcon("image/add.png"));
 				JButton btn1 = new JButton("修改");
-				btn1.setIcon(new ImageIcon("image/add.png"));
+				btn1.setIcon(new ImageIcon("image/arrow_rotate_clockwise.png"));
 				JButton btn2 = new JButton("删除");
-				btn2.setIcon(new ImageIcon("image/add.png"));
+				btn2.setIcon(new ImageIcon("image/decline.png"));
 				JButton btn3 = new JButton("查询");
-				btn3.setIcon(new ImageIcon("image/add.png"));
+				btn3.setIcon(new ImageIcon("image/zoom.png"));
 				
 				bar.add(btn);
 				bar.add(btn1);
@@ -351,7 +351,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						New2Name newInsert = new New2Name();
 						newInsert.setVisible(true);
-						newInsert.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert.setBounds((1366-700)/2, (768-380)/2, 700, 380);
 						newInsert.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -362,7 +362,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						New2Name1 newInsert1 = new New2Name1();
 						newInsert1.setVisible(true);
-						newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert1.setBounds((1366-700)/2, (768-380)/2, 700, 380);
 						newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -372,7 +372,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						New2Name2 newInsert1 = new New2Name2();
 						newInsert1.setVisible(true);
-						newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 						newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -382,7 +382,7 @@ public class LeftPanel extends JPanel {
 					public void actionPerformed(ActionEvent e) {
 						New2Name3 newInsert1 = new New2Name3();
 						newInsert1.setVisible(true);
-						newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+						newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 						newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					}	
 				});
@@ -395,6 +395,9 @@ public class LeftPanel extends JPanel {
 			}
 			
 		});	
+		
+		
+//身份信息检索
 		btn4 = new JButton("身份信息检索");
 		btn4.setBounds(10, 205, 95, 30);
 		btn4.addActionListener(new ActionListener() {
@@ -402,7 +405,6 @@ public class LeftPanel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				MainFrame main = SwingUtil.getMainframe();
-				
 				//获得内容中间容器
 				CenterPanel jpCenter = main.getCenterPanel();
 				
@@ -410,6 +412,8 @@ public class LeftPanel extends JPanel {
 				jpCenter.removeAll();
 				
 				jpCenter.setLayout(new BorderLayout());
+				
+				
 				JPanel pane = new JPanel(new BorderLayout());
 				
            //用户管理表格
@@ -417,47 +421,45 @@ public class LeftPanel extends JPanel {
 				 
 				DieDao dieD = new DieDao();
 				List<Die> list = new ArrayList<>();
-//				list = dieD.selectByCondtion(null);
-//				String[][] tables = new String[list.size()][titles.length];
-//				
-//				for (int i = 0; i < list.size(); i++) {
-//					Die tmp = list.get(i);
-//					
-//					tables[i][0] = tmp.getDid()+"";
-//					tables[i][1] = tmp.getDname();
-//					tables[i][2] = tmp.getDage()+"";
-//					tables[i][3] = tmp.getSsex();
-//					tables[i][4] = tmp.getDaddress();
-//					
-//					
-//				}
-//				
-//				
-//				JTable table = new JTable(tables,titles);
-//				pane.add(table.getTableHeader(),BorderLayout.NORTH);
-//				pane.add(table,BorderLayout.CENTER);
+				list = dieD.selectByCondtion(null);
+				String[][] tables = new String[list.size()][titles.length];
+				
+				for (int i = 0; i < list.size(); i++) {
+					Die tmp = list.get(i);
+					
+					tables[i][0] = tmp.getDid()+"";
+					tables[i][1] = tmp.getDname();
+					tables[i][2] = tmp.getDage()+"";
+					tables[i][3] = tmp.getSsex();
+					tables[i][4] = tmp.getDaddress();
+					
+					
+				}
+				
+				
+				JTable table = new JTable(tables,titles);
+				pane.add(table.getTableHeader(),BorderLayout.NORTH);
+				pane.add(table,BorderLayout.CENTER);
 				//用户管理--增加
 				JToolBar bar = new JToolBar("增加");
-				bar.setPreferredSize(new Dimension(250,460));
+				bar.setPreferredSize(new Dimension(250,60));
 				JButton btn = new JButton("查询");
-				btn.setIcon(new ImageIcon("image/add.png"));
+				btn.setIcon(new ImageIcon("image/zoom.png"));
 				bar.add(btn);
-				
-				  btn.addActionListener(new ActionListener() {
+			
+				btn.addActionListener(new ActionListener() {
 				    	
 				    	@Override
 						public void actionPerformed(ActionEvent e) {
-							NewName3 newInsert1 = new NewName3();
+				    		New4Name newInsert1 = new New4Name();
 							newInsert1.setVisible(true);
-							newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+							newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 							newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-				    	 
-				    	 
-				    }	
-				    });
-				jpCenter.add(pane, BorderLayout.CENTER);
-				jpCenter.add(bar, BorderLayout.NORTH);
+				        }	
+			   });
 				
+			    jpCenter.add(pane, BorderLayout.CENTER);
+			    jpCenter.add(bar,BorderLayout.NORTH);
 				
 				//重新校验 控件是否有效
 				jpCenter.revalidate();
@@ -487,7 +489,7 @@ public class LeftPanel extends JPanel {
 				JPanel pane = new JPanel(new BorderLayout());
 				
 		           //用户管理表格
-						String[] titles = {"编号","姓名","年龄","性别","死亡时间","死亡地点","家庭住址"};
+						String[] titles = {"编号","姓名","年龄","性别","死亡时间","死亡   地点","家庭住址"};
 						 
 						LocalDao local = new LocalDao();
 						List<Local> list = new ArrayList<>();
@@ -517,11 +519,11 @@ public class LeftPanel extends JPanel {
 						JButton btn = new JButton("增加");
 						btn.setIcon(new ImageIcon("image/add.png"));
 						JButton btn1 = new JButton("删除");
-						btn1.setIcon(new ImageIcon("image/add.png"));
+						btn1.setIcon(new ImageIcon("image/decline.png"));
 						JButton btn2 = new JButton("修改");
-						btn2.setIcon(new ImageIcon("image/add.png"));
+						btn2.setIcon(new ImageIcon("image/arrow_rotate_clockwise.png"));
 						JButton btn3 = new JButton("查询");
-						btn3.setIcon(new ImageIcon("image/add.png"));
+						btn3.setIcon(new ImageIcon("image/zoom.png"));
 						bar.add(btn);
 						bar.add(btn1);
 						bar.add(btn2);
@@ -542,7 +544,7 @@ public class LeftPanel extends JPanel {
 							public void actionPerformed(ActionEvent e) {
 								New3Name1 newInsert1 = new New3Name1();
 								newInsert1.setVisible(true);
-								newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+								newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 								newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 							}	
 						});
@@ -562,7 +564,7 @@ public class LeftPanel extends JPanel {
 							public void actionPerformed(ActionEvent e) {
 								New3Name3 newInsert1 = new New3Name3();
 								newInsert1.setVisible(true);
-								newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+								newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 								newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 							}	
 						});
@@ -576,7 +578,7 @@ public class LeftPanel extends JPanel {
 		
 			
 		});			
-		
+//居民亲属管理		
 		btn6 = new JButton("居民亲属管理");
 		btn6.setBounds(10, 125, 95, 30);
 		btn6.addActionListener(new ActionListener() {
@@ -624,7 +626,7 @@ public class LeftPanel extends JPanel {
 				JToolBar bar = new JToolBar("增加");
 				bar.setPreferredSize(new Dimension(0,60));
 				JButton btn = new JButton("查找");
-				btn.setIcon(new ImageIcon("image/add.png")); 
+				btn.setIcon(new ImageIcon("image/zoom.png")); 
 				bar.add(btn);
 				    btn.addActionListener(new ActionListener() {
 				    	
@@ -632,7 +634,7 @@ public class LeftPanel extends JPanel {
 						public void actionPerformed(ActionEvent e) {
 							New5Name newInsert1 = new New5Name();
 							newInsert1.setVisible(true);
-							newInsert1.setBounds((1366-800)/2, (768-460)/2, 800, 460);
+							newInsert1.setBounds((1366-400)/2, (768-300)/2, 400, 300);
 							newInsert1.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 				    	 
 				    	 

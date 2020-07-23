@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
@@ -48,7 +49,7 @@ public class NewName extends JDialog {
 	 * Create the dialog.
 	 */
 	public NewName() {
-		setBounds(100, 100, 800, 460);
+		setBounds(100, 100, 600, 400);
 		setTitle("用户管理");
 		getContentPane().setLayout(null);
 		contentPanel.setBounds(0, 0, 432, 1);
@@ -61,47 +62,47 @@ public class NewName extends JDialog {
 		contentPanel.add(label);
 		
 		JLabel lblNewLabel = new JLabel("\u7F16\u53F7\uFF1A");
-		lblNewLabel.setBounds(232, 51, 72, 18);
+		lblNewLabel.setBounds(132, 51, 72, 18);
 		getContentPane().add(lblNewLabel);
 		
 		JLabel label_1 = new JLabel("\u59D3\u540D\uFF1A");
-		label_1.setBounds(232, 100, 72, 18);
+		label_1.setBounds(132, 100, 72, 18);
 		getContentPane().add(label_1);
 		
 		JLabel label_2 = new JLabel("\u5E74\u9F84\uFF1A");
-		label_2.setBounds(231, 146, 72, 18);
+		label_2.setBounds(131, 146, 72, 18);
 		getContentPane().add(label_2);
 		
 		JLabel label_3 = new JLabel("\u6027\u522B\uFF1A");
-		label_3.setBounds(230, 188, 72, 18);
+		label_3.setBounds(130, 188, 72, 18);
 		getContentPane().add(label_3);
 		
 		textField = new JTextField();
-		textField.setBounds(322, 45, 225, 24);
+		textField.setBounds(222, 45, 225, 24);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JLabel label_4 = new JLabel("家庭住址:");
-		label_4.setBounds(233, 235, 90, 18);
+		label_4.setBounds(133, 235, 90, 18);
 		getContentPane().add(label_4);
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
-		textField_1.setBounds(323, 95, 225, 24);
+		textField_1.setBounds(223, 95, 225, 24);
 		getContentPane().add(textField_1);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(323, 140, 225, 24);
+		textField_2.setBounds(223, 140, 225, 24);
 		getContentPane().add(textField_2);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(323, 186, 226, 24);
+		textField_3.setBounds(223, 186, 226, 24);
 		getContentPane().add(textField_3);
 		textField_3.setColumns(10);
 		
 		textField_4 = new JTextField();
-		textField_4.setBounds(323, 235, 224, 24);
+		textField_4.setBounds(223, 235, 224, 24);
 		getContentPane().add(textField_4);
 		textField_4.setColumns(10);
 		
@@ -125,8 +126,9 @@ public class NewName extends JDialog {
 				
 			}
 		});
+		
 		btnNewButton.setAction(action);
-		btnNewButton.setBounds(330, 300, 113, 27);
+		btnNewButton.setBounds(230, 300, 113, 27);
 		getContentPane().add(btnNewButton);
 	}
 	private class SwingAction extends AbstractAction {

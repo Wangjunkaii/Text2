@@ -50,7 +50,7 @@ import dao.PublicDao;
 		public New2Name2() {
 	
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setBounds(100, 100, 800, 460);
+			setBounds(100, 100, 400, 300);
 			setTitle("公共卫生服务");
 			contentPane = new JPanel();
 			contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -58,13 +58,13 @@ import dao.PublicDao;
 			contentPane.setLayout(null);
 			
 			JLabel lblNewLabel = new JLabel("档案编号:");
-			lblNewLabel.setBounds(300, 150, 100, 50);
+			lblNewLabel.setBounds(50, 80, 72, 18);
 			contentPane.add(lblNewLabel);
 			
 			
 			
 			textField = new JTextField();
-			textField.setBounds(370, 159, 200, 30);
+			textField.setBounds(120, 80, 170, 24);
 			contentPane.add(textField);
 			textField.setColumns(10);
 			
@@ -72,7 +72,7 @@ import dao.PublicDao;
 			JButton btnNewButton = new JButton("确定");
 			btnNewButton.setBackground(Color.pink);
 			btnNewButton.setAction(action);
-			btnNewButton.setBounds(370, 250, 100, 40);
+			btnNewButton.setBounds(135, 170, 100, 30);
 			contentPane.add(btnNewButton);
 		}
 
@@ -88,7 +88,7 @@ import dao.PublicDao;
 				
 				
 				PublicDao public3 = new PublicDao();
-				public3.selectByCondtion(public2);
+				public3.deleteByCondtion(public2);
 				
 				
 				dispose();

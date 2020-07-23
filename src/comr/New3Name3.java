@@ -65,10 +65,10 @@ public class New3Name3 extends JDialog {
 		contentPanel.add(label);
 		
 		JLabel lblNewLabel = new JLabel(" ‰»Î–’√˚:");
-		lblNewLabel.setBounds(232, 130, 72, 18);
+		lblNewLabel.setBounds(50, 80, 72, 18);
 		getContentPane().add(lblNewLabel);
 		textField = new JTextField();
-		textField.setBounds(302, 130, 225, 24);
+		textField.setBounds(120, 80, 170, 24);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		JButton btnNewButton = new JButton("≤È—Ø");
@@ -96,7 +96,7 @@ public class New3Name3 extends JDialog {
 			
 		});
 		btnNewButton.setAction(action);
-		btnNewButton.setBounds(335, 220, 113, 27);
+		btnNewButton.setBounds(135, 170, 100, 27);
 		getContentPane().add(btnNewButton);
 	}
 	private class SwingAction extends AbstractAction {

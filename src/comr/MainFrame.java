@@ -1,8 +1,7 @@
 package comr;
 
 import java.awt.BorderLayout;
-
-
+import java.awt.Container;
 import java.awt.Dimension;
 
 import javax.swing.ImageIcon;
@@ -17,7 +16,7 @@ public class MainFrame extends JFrame{
 	public static void main(String[] args) {
 		new MainFrame();
 	}
-	
+
 	private CenterPanel centerPanel = null;
 	private LeftPanel leftPanel =null;
 	private static JFrame frame = null;
@@ -25,8 +24,8 @@ public class MainFrame extends JFrame{
 		
 		setTitle("居民健康管理系统");
 		frame = this;
-		setBounds((1366-860)/2, (768-560)/2, 800, 460);
-		
+		setBounds((1366-800)/2, (768-560)/2, 800, 460);
+	
 		//初始化容器
 		initPanel();                      
 		
@@ -41,6 +40,7 @@ public class MainFrame extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	public static JFrame getMainFrame(){
+		
 		return  frame;
 	}
 	//返回内容中间容器

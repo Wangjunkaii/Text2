@@ -20,7 +20,7 @@ import dao.LocalDao;
 
 //¾ÓÃñËÀÍö¡ª¡ª¡ª¡ªÔöÌí
 public class New3Name2 extends JDialog{
-static LeftPanel leftPanel = new LeftPanel();
+//static LeftPanel leftPanel = new LeftPanel();
 	
 	private final JPanel contentPanel = new JPanel();
 	private JTextField textField;
@@ -130,6 +130,7 @@ static LeftPanel leftPanel = new LeftPanel();
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Local local = new Local();
+				
 				local.setLid(Integer.parseInt(textField.getText()));
 				local.setLname(textField_1.getText());
 			    local.setLage(Integer.parseInt(textField_2.getText()));
@@ -137,6 +138,7 @@ static LeftPanel leftPanel = new LeftPanel();
 				local.setLtime(textField_4.getText());
 				local.setLdielocal(textField_5.getText());
 				local.setLaddress(textField_6.getText());
+				
 				LocalDao local1 = new LocalDao();
 				local1.updateByCondtion(local);
 				

@@ -39,7 +39,7 @@ public class New2Name3 extends JDialog {
 		
 		try {
 			
-			NewName dialog = new NewName();
+			New2Name3 dialog = new New2Name3();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -51,7 +51,7 @@ public class New2Name3 extends JDialog {
 	 * Create the dialog.
 	 */
 	public New2Name3() {
-		setBounds(100, 100, 800, 460);
+		setBounds(100, 100,400, 300);
 		setTitle("公共卫生服务");
 		getContentPane().setLayout(null);
 		contentPanel.setBounds(0, 0, 432, 1);
@@ -64,10 +64,10 @@ public class New2Name3 extends JDialog {
 		contentPanel.add(label);
 		
 		JLabel lblNewLabel = new JLabel("输入姓名:");
-		lblNewLabel.setBounds(232, 130, 72, 18);
+		lblNewLabel.setBounds(50, 80, 72, 18);
 		getContentPane().add(lblNewLabel);
 		textField = new JTextField();
-		textField.setBounds(302, 130, 225, 24);
+		textField.setBounds(120, 80, 170, 24);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		JButton btnNewButton = new JButton("查询");
@@ -87,7 +87,7 @@ public class New2Name3 extends JDialog {
 				
 				New2Name4 frame = new New2Name4(list);
 				frame.setVisible(true);
-				frame.setBounds(500, 200, 500,300);
+				frame.setBounds(500, 200, 400,300);
 				
 				
 					
@@ -95,7 +95,7 @@ public class New2Name3 extends JDialog {
 			
 		});
 		btnNewButton.setAction(action);
-		btnNewButton.setBounds(335, 220, 113, 27);
+		btnNewButton.setBounds(135, 170, 100, 27);
 		getContentPane().add(btnNewButton);
 	}
 	private class SwingAction extends AbstractAction {

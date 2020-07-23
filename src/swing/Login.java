@@ -4,6 +4,7 @@ import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -18,6 +19,7 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
 import beans.User;
+import comr.LeftPanel;
 import comr.MainFrame;
 import dao.IUserDao;
 import dao.UserDao;
@@ -38,14 +40,20 @@ public class Login {
         // 创建内容面板，指定布局为 null，则使用绝对布局
         JPanel panel = new JPanel(null);
 
+        
+        
+      //二维码登录
+        JLabel lblNewLabel = new JLabel("二维码登录");
+		lblNewLabel.setBounds(55, 85, 72, 18);
+		panel.add(lblNewLabel );
      //标题
         JLabel label_image1 = new JLabel(new ImageIcon("./image/3.jpg"));
   		label_image1.setLocation(0, 20);
   		label_image1.setSize(600,50);
 		panel.add(label_image1);
      //二维码
-        JLabel label_image = new JLabel(new ImageIcon("./image/4.jpg"));
-  		label_image.setLocation(50, 90);
+        JLabel label_image = new JLabel(new ImageIcon("./image/8.png"));
+  		label_image.setLocation(50, 95);
   		label_image.setSize(200,200);
 		panel.add(label_image);
      //用户名
@@ -78,18 +86,7 @@ public class Login {
         panel.add(label_password);
         panel.add(password);
         
-    //记住密码
-        JCheckBox checkbox=new JCheckBox("记住密码",false);
-		System.out.println(checkbox.getText());
-		con.add(checkbox);
-		checkbox.setLocation(300, 190);
-		checkbox.setLocation(350,200);
-        // 设置按钮的宽高
-		checkbox.setSize(70, 50);
-		checkbox.setSize(200,25);
-        panel.add(checkbox);
-        
-        
+
      // 登录
         JButton btn=new JButton("登录");
 		btn.setLocation(400,240);

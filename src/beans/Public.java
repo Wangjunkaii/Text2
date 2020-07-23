@@ -10,15 +10,17 @@ public class Public {
 	   private String Pbloodpressure;
 	   private String Psee;
 	   private String Pvital;
-	   private Integer Phouseid;
-		
 	
-	public Integer getPhouseid() {
+	 public Integer getPhouseid() {
 		return Phouseid;
 	}
 	public void setPhouseid(Integer phouseid) {
 		Phouseid = phouseid;
 	}
+	private Integer Phouseid;
+		
+	
+
 	public Integer getPid() {
 		return Pid;
 	}
@@ -68,11 +70,11 @@ public class Public {
 		Pvital = pvital;
 	}
 	  @Override
-		public String toString() {
-			return "Public [Pid=" + Pid + ", Pname=" + Pname + ", Pssex=" + Pssex + ", Pheight=" + Pheight + ", Pweight="
-					+ Pweight + ", Pbloodpressure=" + Pbloodpressure + ", Psee=" + Psee + ", Pvital=" + Pvital
-					+ ", Hhouseid=" + Phouseid + "]";
-		}
+	public String toString() {
+		return "Public [Pid=" + Pid + ", Pname=" + Pname + ", Pssex=" + Pssex + ", Pheight=" + Pheight + ", Pweight="
+				+ Pweight + ", Pbloodpressure=" + Pbloodpressure + ", Psee=" + Psee + ", Pvital=" + Pvital
+				+ ", Phouseid=" + Phouseid + "]";
+	}
 	
 	   
 	   
